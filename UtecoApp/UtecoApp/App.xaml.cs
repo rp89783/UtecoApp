@@ -10,7 +10,7 @@ namespace UtecoApp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new MenuMaipage();
         }
 
         protected override void OnStart()
