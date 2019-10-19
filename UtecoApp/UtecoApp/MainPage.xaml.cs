@@ -23,7 +23,7 @@ namespace UtecoApp
 
         private async void btnIniciar_Clicked(object sender, EventArgs e)
         {if (txtUsername.Text == user && txtPass.Text == pass)
-                await Navigation.PushModalAsync(new PrincipalPagina());
+                await Navigation.PushModalAsync(new MenuMaipage());
 
             else
             {
