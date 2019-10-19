@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="UtecoApp.PrincipalPagina"
+             Title="UTECO App">
+    <ScrollView>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Header background-->
+            <Image Source="UtecoFondo.jpg" Grid.Row="0" />
+
+            <!--Profile Name-->
+            <StackLayout Grid.Row="1" Padding="0,50,0,0">
+                <Label Text="Bienvenid@ Usuario" x:Name="lblBienvenida" 
+                       
+                       Style="{StaticResource Nombreestudiante}" HorizontalOptions="Center" ></Label>
+                <Label Text="Matricula: 2019-0000" x:Name="lblMatricula" HorizontalOptions="Center" ></Label>
+                <Label Text="Servicios"  HorizontalOptions="Center" TextColor="Black" ></Label>
+
+            </StackLayout>
+
+            <!--Menu o Servicos-->
+            <Grid Grid.Row="3" Padding="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <StackLayout Grid.Row="0" BackgroundColor="Aqua">
+                        <ImageButton Source="Aplicaciones.png" HorizontalOptions="Center" HeightRequest="90" Aspect="Fill" x:Name="btnApps" Clicked="btnApps_Clicked" ></ImageButton>
+                    </StackLayout>
+                    <StackLayout Grid.Row="1" BackgroundColor="Aqua">
+                        
+                        <ImageButton Source="Documentacion.png"  HorizontalOptions="Center" HeightRequest="90" Aspect="Fill" ></ImageButton>
+                    </StackLayout>
+
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <StackLayout Grid.Row="0" BackgroundColor="Aqua">
+                        <ImageButton Source="CampusVirtual.png" HorizontalOptions="Center" HeightRequest="90" Aspect="Fill"></ImageButton>
+                    </StackLayout>
+                    <StackLayout Grid.Row="1" BackgroundColor="Aqua">
+                        <ImageButton Source="Office.png"  HorizontalOptions="Center" HeightRequest="90" Aspect="Fill"></ImageButton>
+                    </StackLayout>
+
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <StackLayout Grid.Row="0" BackgroundColor="Aqua">
+                        <ImageButton Source="Reportes.png" HorizontalOptions="Center" HeightRequest="90" Aspect="Fill"></ImageButton>
+                    </StackLayout>
+                    <StackLayout Grid.Row="1" BackgroundColor="Aqua">
+                        <ImageButton Source="ayuda.png"  HorizontalOptions="Center" HeightRequest="90" Aspect="Fill"></ImageButton>
+                    </StackLayout>
+
+                </Grid>
+            </Grid>
+
+
+
+
+            <!--Pie-->
+            <BoxView BackgroundColor="Yellow" Grid.Row="4"/>
+
+            <!--Profile Image-->
+            <Image Source="Estudiant.png"  Grid.Row="0"  VerticalOptions="End" HorizontalOptions="Center" HeightRequest="200" WidthRequest="200" TranslationY="50"  />
+
+
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

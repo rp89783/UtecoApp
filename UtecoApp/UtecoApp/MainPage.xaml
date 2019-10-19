@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="UtecoApp.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Login" TextColor="Black" HorizontalOptions="Center" Margin="0,20,0,0" FontSize="20"/>
+        <Image Source="logo.png" Margin="5"/>
+        <Entry Placeholder="Username" x:Name="txtUsername" Margin="10"></Entry>
+        <Entry Placeholder="Password" x:Name="txtPass" Margin="10" IsPassword="True"></Entry>
+        <Label Text="" TextColor="Red" x:Name="lblError"/>
+        <Button Text="Iniciar Sesion" CornerRadius="20" BackgroundColor="Green" Margin="20,20,20,0" TextColor="White" x:Name="btnIniciar" Clicked="btnIniciar_Clicked" />
+        <Button Text="Cancelar" CornerRadius="20" BackgroundColor="Red" Margin="20,0,20,0" TextColor="White" x:Name="btncancelar" Clicked="btncancelar_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
